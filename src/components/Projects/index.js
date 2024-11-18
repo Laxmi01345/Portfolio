@@ -1,12 +1,9 @@
-import React from 'react'
-import { useState } from 'react'
-import { Container, Wrapper, Title, Desc, CardContainer, ToggleButtonGroup, ToggleButton, Divider } from './ProjectsStyle'
-import ProjectCard from '../Cards/ProjectCards'
-import { projects } from '../../data/constants'
+import React from 'react';
+import { Container, Wrapper, Title, Desc, CardContainer } from './ProjectsStyle';
+import ProjectCard from '../Cards/ProjectCards';
+import { projects } from '../../data/constants';
 
-
-const Projects = ({openModal,setOpenModal}) => {
-  const [toggle, setToggle] = useState('all');
+const Projects = ({ openModal, setOpenModal }) => {
   return (
     <Container id="projects">
       <Wrapper>
@@ -14,21 +11,20 @@ const Projects = ({openModal,setOpenModal}) => {
         <Desc>
           I have worked on a wide range of projects. From web apps to android apps. Here are some of my projects.
         </Desc>
-        
+
         <CardContainer>
-          {toggle === 'all' && projects
-            .map((project) => (
-              <ProjectCard project={project} openModal={openModal} setOpenModal={setOpenModal}/>
-            ))}
-          {projects
-            .filter((item) => item.category == toggle)
-            .map((project) => (
-              <ProjectCard project={project} openModal={openModal} setOpenModal={setOpenModal}/>
-            ))}
+          {projects.map((project) => (
+            <ProjectCard
+              key={project.id} // Added a key prop for better React performance
+              project={project}
+              openModal={openModal}
+              setOpenModal={setOpenModal}
+            />
+          ))}
         </CardContainer>
       </Wrapper>
     </Container>
-  )
-}
+  );
+};
 
-export default Projects
+export default Projects;

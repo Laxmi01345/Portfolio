@@ -1,16 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 
-const Document = styled.img`
-  height: 70px;
-  width: auto;
-  background-color: #000;
-  border-radius: 10px;
-  &:hover {
-    cursor: pointer;
-    opacity: 0.8;
-  }
-`;
 
 const Description = styled.div`
   width: 100%;
