@@ -5,7 +5,7 @@ import { FaBars } from 'react-icons/fa';
 import { Bio } from '../../data/constants';
 import { Close, CloseRounded } from '@mui/icons-material';
 import { useTheme } from 'styled-components';
-
+import girldev from '../../images/girldev.avif'
 const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
   const theme = useTheme()
@@ -14,7 +14,13 @@ const Navbar = () => {
       <NavbarContainer>
         <NavLogo to='/'>
           <a style={{ display: "flex", alignItems: "center", color: "white", marginBottom: '20;', cursor: 'pointer' }}>
-            <DiCssdeck size="3rem" /> <Span>Portfolio</Span>
+          
+            <img 
+              src={girldev} 
+              alt="Girl Developer" 
+              
+              style={{ width: '50px', height: '50px', marginLeft: '10px' ,border: '2px solid #fff', borderRadius: '50%' }}  // Adjust size as needed
+            />
           </a>
         </NavLogo>
         <MobileIcon>
@@ -27,6 +33,7 @@ const Navbar = () => {
           <NavLink href='#skills'>Skills</NavLink>
           <NavLink href='#experience'>Experience</NavLink>
           <NavLink href='#projects'>Projects</NavLink>
+          <NavLink href='#certificates'>Certificates</NavLink>
           <NavLink href='#education'>Education</NavLink>
         </NavItems>
         <ButtonContainer>
@@ -47,6 +54,9 @@ const Navbar = () => {
             <MobileLink href='#projects' onClick={() => {
               setIsOpen(!isOpen)
             }}>Projects</MobileLink>
+            <MobileLink href='#certificates' onClick={() => {
+              setIsOpen(!isOpen)
+            }}>Education</MobileLink>
             <MobileLink href='#education' onClick={() => {
               setIsOpen(!isOpen)
             }}>Education</MobileLink>
