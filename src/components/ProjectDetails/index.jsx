@@ -9,7 +9,7 @@ height: 100%;
 position: absolute;
 top: 0;
 left: 0;
-background-color: #000000a7;
+background-color:rgba(111, 109, 109, 0.66);
 display: flex;
 align-items: top;
 justify-content: center;
@@ -20,10 +20,11 @@ transition: all 0.5s ease;
 const Wrapper = styled.div`
 max-width: 800px;
 width: 100%;
+background-color:rgba(222, 216, 216, 0.66);
 border-radius: 16px;
 margin: 50px 12px;
 height: min-content;
-background-color: ${({ theme }) => theme.card};
+
 color: ${({ theme }) => theme.text_primary};
 padding: 20px;
 display: flex;
