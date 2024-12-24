@@ -25,7 +25,7 @@ export const Bio = {
     "As an enthusiastic and motivated individual, Eager to learn and grow. I have a solid foundation in both frontend and backend technologies, and I'm passionate about building responsive, user-friendly web applications. I’m committed to honing my skills and contributing fresh ideas to innovative projects.",
   github: "https://github.com/Laxmi01345",
   resume:
-    "https://docs.google.com/document/d/121QBgm4kqrOu6FKVLyO9TvIHrGIwGWRcftb1lAChCj4/edit?usp=sharing",
+    "https://drive.google.com/file/d/1ynrImvSvT9Fe6K8MeWM9Bksq8mkI4u0C/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/laxmi-ray-198257237",
   twitter: "https://x.com/LaxmiRay198",
 };
