@@ -193,8 +193,8 @@ export const projects = [
       "Socket.io"
     ],
     category: "Best",
-    github: "https://github.com/rishavchanda/Trackify",
-    webapp: "https://trackify.duckdns.org",
+    github: "https://github.com/Laxmi01345/Code-Collab-Chat",
+    webapp: "https://collaborative-code-editor-0ka2.onrender.com/",
   },
   {
     id: 0,
